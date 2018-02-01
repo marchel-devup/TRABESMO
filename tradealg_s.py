@@ -1,9 +1,11 @@
 #!/bin/python3
 import sqlite3
 import time
+import config
+
 HISTORY = 1800#30 min epoch
 
-conn = sqlite3.connect('trade.db')
+conn = sqlite3.connect(config.db_file)
 c = conn.cursor()
 delta = time.time()-HISTORY
 string = "select sell_price from TICKER where pair='BTC_USD' AND updated>%s;"%delta
