@@ -5,3 +5,5 @@
 pairs = ["BTC_USD"]
 # Path to database file
 db_file = '/home/trade.db'
+# Path to db.conf file
+db_conf = 'db.conf'
