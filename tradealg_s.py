@@ -2,7 +2,8 @@
 import sqlite3
 import time
 import json
-DBconf = 'db.conf'
+import config
+DBconf = config.db_conf
 DBname = open(DBconf).readline().strip()
 
 
